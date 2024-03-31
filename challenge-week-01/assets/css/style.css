@@ -17,7 +17,7 @@ header, footer{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-nav{
+nav, .footer-heading{
     font-size: 20px;
 }
 
@@ -28,10 +28,6 @@ h1{
 
 h2{
     font-size: 36px;
-}
-
-.footer-heading{
-    font-size: 20px;
 }
 
 p {
