@@ -25,6 +25,7 @@ nav{
 }
 
 h1{
+    display: inline-block;
     font-size: 48px;
 }
 
@@ -40,35 +41,27 @@ p {
     font-size: 16px;
 }
 
+/* HEADER */
 header {
     padding: 20px;    
     background-color: #2a607c;
     color: #ffffff;
 }
 
-/* remove .header */
-h1 {
-    display: inline-block;    
-}
-
-/* remove .header and h1 */
 .seo {
     color: #d9dcd6;
 }
 
-/* replace .header div by nav */
 nav {
     padding-top: 15px;
     margin-right: 20px;
     float: right;
 }
 
-/* remove .header div */
 ul {
     list-style-type: none;
 }
 
-/* remove .header div ul */
 li {
     display: inline-block;
     margin-left: 25px;
@@ -198,15 +191,7 @@ a {
     max-height: 200px;
 }
 
-.search-engine-optimization h2 {
-    margin-bottom: 20px;
-}
-
-.online-reputation-management h2 {
-    margin-bottom: 20px;
-}
-
-.social-media-marketing h2 {
+.mb-20{
     margin-bottom: 20px;
 }
 
