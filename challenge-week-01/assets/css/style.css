@@ -6,6 +6,7 @@
 
 body {
     background-color: #d9dcd6;
+    color: #ffffff;
 }
 
 /* TYPOGRAPHY */
@@ -41,7 +42,6 @@ p {
 header {
     padding: 20px;    
     background-color: #2a607c;
-    color: #ffffff;
 }
 
 .seo {
@@ -78,7 +78,6 @@ a {
 }
 
 /* FLOAT */
-
 .float-left {
     float: left;
     margin-right: 25px;
@@ -101,7 +100,6 @@ a {
     padding: 50px;
     height: 300px;
     background-color: #0072bb;
-    color: #ffffff;
 }
 
 .content__img {
@@ -117,7 +115,6 @@ a {
     width: 20%;
     height: 100%;
     background-color: #2589bd;
-    color: #ffffff;
 }
 
 .benefits__container{
@@ -138,8 +135,9 @@ a {
 /* FOOTER */
 footer {
     padding: 30px;
-    clear: both;    
+    clear: both;
     text-align: center;
+    color: black;
 }
 
 /* MARGIN */
