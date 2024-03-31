@@ -1,1 +1,1 @@
-#This solution is for week 01 challenge 02
+This is week 1 challenge solution
