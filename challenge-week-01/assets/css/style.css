@@ -12,11 +12,7 @@ body {
 body{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-header{
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
-
-footer{
+header, footer{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
@@ -81,6 +77,8 @@ a {
     background-position: center;
 }
 
+/* FLOAT */
+
 .float-left {
     float: left;
     margin-right: 25px;
@@ -91,12 +89,26 @@ a {
     margin-left: 25px;
 }
 
+/* CONTENT */
 .content {
     width: 75%;
     display: inline-block;
     margin-left: 20px;
 }
 
+.content__container{
+    margin-bottom: 20px;
+    padding: 50px;
+    height: 300px;
+    background-color: #0072bb;
+    color: #ffffff;
+}
+
+.content__img {
+    max-height: 200px;
+}
+
+/* BENEFITS */
 .benefits {
     margin-right: 20px;
     padding: 20px;
@@ -105,98 +117,32 @@ a {
     width: 20%;
     height: 100%;
     background-color: #2589bd;
-}
-
-.benefit-lead {
-    margin-bottom: 32px;
     color: #ffffff;
 }
 
-.benefit-brand {
+.benefits__container{
     margin-bottom: 32px;
-    color: #ffffff;
 }
 
-.benefit-cost {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
-
-.benefit-lead h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.benefit-brand h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.benefit-cost h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.benefit-lead img {
+.icon{
     display: block;
     margin: 10px auto;
     max-width: 150px;
 }
 
-.benefit-brand img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
+.benefit-heading{
+    margin-bottom: 10px;
+    text-align: center;
 }
 
-.benefit-cost img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
-
-.search-engine-optimization {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-
-.online-reputation-management {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-
-.social-media-marketing {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-
-.search-engine-optimization img {
-    max-height: 200px;
-}
-
-.online-reputation-management img {
-    max-height: 200px;
-}
-
-.social-media-marketing img {
-    max-height: 200px;
-}
-
-.mb-20{
-    margin-bottom: 20px;
-}
-
+/* FOOTER */
 footer {
     padding: 30px;
     clear: both;    
     text-align: center;
+}
+
+/* MARGIN */
+.mb-20{
+    margin-bottom: 20px;
 }
