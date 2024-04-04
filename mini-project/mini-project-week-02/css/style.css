@@ -28,13 +28,13 @@ header{
     text-align: center;
 }
 
-.header-heading{
+.header__heading{
     font-size: 2.78rem;
     line-height: 1.1;
     margin: 2rem 0 1rem 0;
 }
 
-.header-content{
+.header__content{
     color: var(--secondary-color);
     font-size: 0.92rem;
     margin: 0;
@@ -43,12 +43,24 @@ header{
 }
 
 @media screen and (min-width: 768px){
-    .header-heading{
+    .header__heading{
         font-size: 4rem;
         margin-bottom: 1.5rem;
     }
-    .header-content{
+    .header__content{
         font-size: 1.5rem;
         padding: 0 4rem;
     }
+}
+
+/* BADGE */
+.badge{
+    border: 1px var(--secondary-color) dashed;
+    padding: 0 10px;
+}
+
+.badge__heading{
+    border: 1px var(--secondary-color) solid;
+    border-radius: 5px;
+    padding-left: 10px;
 }
