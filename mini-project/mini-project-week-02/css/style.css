@@ -95,3 +95,13 @@ header {
 .tab {
   margin-left: 1.5rem;
 }
+
+@media screen and (min-width: 1024px){
+    .badge__heading{
+        font-size: 3rem;
+    }
+
+    .badge__content, .badge__code{
+        font-size: 2rem;
+    }
+}
