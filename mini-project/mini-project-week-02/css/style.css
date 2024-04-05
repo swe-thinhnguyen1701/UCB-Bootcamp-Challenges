@@ -68,6 +68,13 @@ header {
   margin-top: 2.5rem;
 }
 
+.badge:hover{
+    box-shadow: 0 0 3rem var(--primary-color);
+    .badge__heading{
+        box-shadow: 0 0 2rem var(--primary-color);
+    }
+}
+
 .badge__heading {
   background-color: var(--background-color);
   border-radius: 0.8rem;
@@ -79,6 +86,10 @@ header {
 
 .badge__content {
   margin-bottom: 1rem;
+}
+
+.badge__code:hover{
+    cursor: pointer;
 }
 
 .badge__code {
