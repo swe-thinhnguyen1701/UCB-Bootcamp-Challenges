@@ -1,66 +1,97 @@
-:root{
-    --primary-color: #e867ed;
-    --secondary-color: #e0eae5;
+:root {
+  --primary-color: #de79e2;
+  --secondary-color: #e0eae5;
+  --background-color: #333940;
 }
 
-*{
-    box-sizing: border-box;
+* {
+  box-sizing: border-box;
 }
 
-html{
-    font-size: 62.5%;
+html {
+  font-size: 62.5%;
+}
+
+h1,
+h2,
+p {
+  margin: 0;
 }
 
 /* TYPOGRAPHY */
-body{
-    background-color: #333940;
-    color: var(--primary-color);
-    font-family: sans-serif;
-    line-height: 1.5;
-    margin: 0;
+body {
+  background-color: var(--background-color);
+  color: var(--primary-color);
+  font-family: sans-serif;
+  line-height: 1.7;
+  margin: 0;
+  font-size: 1.6rem;
 }
 
 /* HEADER */
-header{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
-.header__heading{
-    font-size: 2.78rem;
-    line-height: 1.1;
-    margin: 2rem 0 1rem 0;
+.header__heading {
+  font-size: 2.78rem;
+  line-height: 1.1;
+  margin: 2rem 0 1rem 0;
 }
 
-.header__content{
-    color: var(--secondary-color);
-    font-size: 0.92rem;
-    margin: 0;
-    padding: 0 1rem;
-    max-width: 90%;
+.header__content {
+  color: var(--secondary-color);
+  font-size: 0.92rem;
+  margin: 0;
+  padding: 0 1rem;
+  max-width: 90%;
 }
 
-@media screen and (min-width: 768px){
-    .header__heading{
-        font-size: 4rem;
-        margin-bottom: 1.5rem;
-    }
-    .header__content{
-        font-size: 1.5rem;
-        padding: 0 4rem;
-    }
+@media screen and (min-width: 768px) {
+  .header__heading {
+    font-size: 4rem;
+    margin-bottom: 1.5rem;
+  }
+  .header__content {
+    font-size: 1.5rem;
+    padding: 0 4rem;
+  }
 }
 
 /* BADGE */
-.badge{
-    border: 1px var(--secondary-color) dashed;
-    padding: 0 10px;
+.badge {
+  border: 1px var(--secondary-color) dashed;
+  padding: 0 2rem;
+  margin-top: 2.5rem;
 }
 
-.badge__heading{
-    border: 1px var(--secondary-color) solid;
-    border-radius: 5px;
-    padding-left: 10px;
+.badge__heading {
+  background-color: var(--background-color);
+  border-radius: 0.8rem;
+  border: 0.1rem var(--secondary-color) solid;
+  padding-left: 1rem;
+  position: relative;
+  top: -1.8rem;
+}
+
+.badge__content {
+  margin-bottom: 1rem;
+}
+
+.badge__code {
+  background: rgb(112, 75, 117);
+  background: linear-gradient(
+    rgba(112, 75, 117, 1) 0%,
+    rgba(158, 88, 158, 1) 98%
+  );
+  color: white;
+  padding: 1rem;
+  margin-bottom: 2rem;
+}
+
+.tab {
+  margin-left: 1.5rem;
 }
