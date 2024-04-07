@@ -1,21 +1,34 @@
+:root{
+  --box-shadow-color: #ECEBEA;
+}
+
 * {
   box-sizing: border-box;
 }
 
 html {
   font-size: 62.5%;
+  background-color: #fff;
+}
+
+main{
+  padding: 0 1rem;
 }
 
 /* TYPOGRAPHY */
-body {
+body {  
+  font-family: 'Courier New', Courier, monospace;
   font-size: 1.2rem;
-  padding: 2rem;
   margin: 0 auto;
   max-width: 1440px;
 }
 
-h2, h3, p{
+h1, h2, h3, p{
     margin: 0;
+}
+
+h1{
+  font-size: 2.35rem;
 }
 
 h2 {
@@ -26,7 +39,24 @@ h3 {
   font-size: 1.8rem;
 }
 
+.greeting__code{
+  font-family: fantasy;
+  font-size: .9rem;
+  color: grey;
+  line-height: 2.4;
+}
+
+.greeting__position{
+  font-family: monospace;
+  font-size: 1.3rem;
+  line-height: 1;
+}
+
 @media screen and (min-width: 768px) {
+  h1{
+    font-size: 4.2rem;
+  }
+
   h2 {
     font-size: 3rem;
   }
@@ -44,6 +74,11 @@ h3 {
   body {
     font-size: 1.8rem;
   }
+
+  h1{
+    font-size: 5rem;
+  }
+
   h2 {
     font-size: 3.5rem;
   }
@@ -72,14 +107,30 @@ h3 {
 
 /* HEADER */
 header{
+  width: 100%;
+  box-shadow: 0 1rem 40px var(--box-shadow-color);  
+}
+
+.header__content{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    max-width: 1240px;
+    margin: 0 auto;
+    width: 100%;
+    background-color: white;
+}
+
+@media screen and (min-width: 768px){
+  header{
+    padding: 0 2rem;
+  }
 }
 
 /* Logo */
 .logo{
   width: 13.5rem;
+  margin: 1rem;
 }
 
 @media screen and (min-width: 768px){
@@ -92,4 +143,28 @@ header{
   .logo{
     width: 26rem;
   }
+}
+
+/* Links */
+a{
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+}
+
+a:visited{
+  color: black;
+}
+
+a:hover{
+  text-decoration: underline;
+}
+
+/* Greeting */
+.greeting{
+  margin: 10rem 0;
+}
+
+.greeting__inline{
+  display: inline;
 }
